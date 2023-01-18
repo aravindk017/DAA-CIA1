@@ -1,0 +1,25 @@
+QUESTION: TO SOLVE THE MENTIONED DIAGRAM AND FIND THE MINIMUM SPANNING TREE USING BELLMAN FORD ALGORITHM
+
+ADJACECNY MATRIX:
+[0 4 2 0 0]
+[4 0 3 2 3]
+[2 1 0 4 5]
+[0 0 0 0 0]
+[0 0 0 -5 0]
+
+For the following diagram, teh basic prim's and kruskal's algorithm cannot be applied because it is directed and had a negative edge of -5.
+Hence, for directed graphs, Dijkstra's algorithm will be applied where we can determine and alter the distance of each vertex,where:
+distance of one vertex(u) + edge of the vertices(u,v) < distance of vertex(v)
+Then, distance of vertex v = distance of vertex(u) +edge of the vertices(u,v)
+
+d(u) + c(u,v) < d(v)
+then d(v)= d(u)+ c(u,v)
+
+After evaluating the formula:
+
+VERTEX | DISTANCE
+A         0
+B         3
+C         2
+D         5
+E         6
